@@ -1,0 +1,51 @@
+.mySwiper {
+  overflow-y: visible;
+  .swiper-pagination {
+    position: absolute;
+    bottom: -30px !important;
+
+    .swiper-pagination-bullet {
+      background-color: #ff5500;
+    }
+  }
+
+  .swiper-slide {
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+
+}
+
+.gold {
+  .swiper-pagination {
+    position: absolute;
+    bottom: -28px !important;
+
+    .swiper-pagination-bullet {
+      background-color: #FFDFA7;
+    }
+  }
+}
+
+.indicator {
+  position: absolute;
+  top: -6px;
+  min-width: 0;
+  width: 65px;
+  background: #42464B;
+  transition: left .5s, width .3s;
+  height: 70px;
+  margin-top: 5px;
+  border-radius: 0.5rem;
+  left: 20px;
+}
+
+.casino-bg {
+  background-image: url("../../assets//images//casino-nav-bg.png");
+  background-size: contain;
+}
+

@@ -1,0 +1,75 @@
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+  text-align: center;
+}
+// AYUobEnQTp0ItiZDSxTVCCyrAQvDcp0RSGNrZTbLZG9qXSQLWutfNz_7bUSvuGvsV9XOY8ch6RFOcB_g  --- clientid
+// EDPHMfhxfE7Yw4Q4_P4FoLXRS0sSR_cEge4JRLZov7RZo8T-hszuQWE9IX_xM3Xa0o16KNFGIsA8xWvQ  --- client secret
+.header {
+  height: 20px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  background-color: black !important;
+  padding: 3px;
+}
+
+.sub_header {
+  background-color: #3C0099 !important;
+  height: 15px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  padding: 3px;
+
+  @media only screen and (max-width:420px){
+    font-size: 8px;
+  }
+}
+
+table.data th {
+  background-color: #516aa2;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+}
+
+table.data tr.even td {
+  background-color: #eeeeee;
+}
+
+table.data a {
+  text-decoration: none;
+  color: #F60;
+  font-weight: bold;
+}
+
+table.data tr.odd td {
+  background-color: #FFF;
+}
+
+table.data {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  margin: auto;
+  background-color: #cccccc;
+
+  @media only screen and (max-width:420px){
+    font-size: 8px;
+  }
+}
+
+td {
+  text-align: center;
+}
+a{
+  img {
+    margin: 0 auto;
+  }
+}

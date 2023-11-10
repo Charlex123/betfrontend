@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-bg {
+  background-image: url('./assets/images/main-app-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Hide the default navigation arrows */
+/* Customize the new navigation arrows */
+/* Style the left arrow */
+/* Style the right arrow */
+.swiper-button-prev {
+	display: none;
+}
+.swiper-button-next {
+	display: none;
+}
+.mySwiper {
+	.swiper-button-prev {
+		&::after {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 10;
+			left: 10px;
+			clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+		}
+	}
+	.swiper-button-next {
+		&::after {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 10;
+			right: 10px;
+			clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+		}
+	}
+}
+
+.active {
+  &::after {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 28px;
+    background-color:#ff5500 ;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    z-index: -10;
+    right: 6px;
+    border-radius: 12px;
+    
+  }
+}
+
+.active-dark {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 140%;
+    height: 28px;
+    background-color: #ff5500;
+    position: absolute;
+    top: 50%; /* Change this line */
+    left: 50%; /* Add this line */
+    transform: translate(-50%, -50%); /* Add this line */
+    z-index: -10;
+    right: 6px;
+    border-radius: 4px;
+    }
+}
+.active-sports-filter {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 130%;
+    height: 36px;
+    background-color: #ff5500;
+    position: absolute;
+    top: 50%; /* Change this line */
+    left: 50%; /* Add this line */
+    transform: translate(-50%, -50%); /* Add this line */
+    z-index: -10;
+    right: 6px;
+    border-radius: 20px;
+    }
+}
+
+
+.all-sports {
+	background-image: url('./assets/images/sport-all.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sports-cricket {
+	background-image: url('./assets/images/megabets-sport-cricket.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sports-soccer {
+	background-image: url('./assets/images/megabets-sport-soccer.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sports-tennis {
+	background-image: url('./assets/images/megabets-sport-tennis.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.top-to-btm{
+  position: relative;
+  z-index: 1000;
+}
+.icon-position{
+  position: absolute;
+  bottom: 80px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style{
+  background-color: #ff5500;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+.icon-style:hover{
+  animation: none;
+  background: #fff;
+  color: #ff5500;
+  border: 2px solid #ff5500;
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.icon-triangle-shadow {
+  border-color: transparent #000 transparent transparent;
+  border-style: solid;
+  border-width: 0 0.5rem 0.4285714286rem 0;
+  height: 0;
+  width: 0;
+}
+
+.login-bg {
+  background-image: url("./assets/images/bg-login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
