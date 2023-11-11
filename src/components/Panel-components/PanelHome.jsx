@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import PanelMarquee from "./PanelMarquee";
 import AddUserPopup from "./AddUserPopup";
 import PanelTable from "./PanelTable";
 import PanelInfoBar from "./PanelInfoBar";
 
 const PanelHome= ()=> {
+
   return(
     <div className=" w-full flex flex-col space-y-4">
       <PanelMarquee/>
@@ -46,7 +47,7 @@ const PanelHome= ()=> {
       </div>
       <PanelInfoBar/>
       <div>
-        <PanelTable/>
+        <PanelTable />
       </div>
     </div>
   )
