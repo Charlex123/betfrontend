@@ -84,7 +84,7 @@ const AddMasterAgentPopup = () => {
         }  
         
         setLoading(true);
-        const {data} = await axios.post("http://localhost:9000/api/users/register", {
+        const {data} = await axios.post("https://betbackend.onrender.com/api/users/register", {
           username,
           userType,
           email,

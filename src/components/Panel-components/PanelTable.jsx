@@ -22,7 +22,7 @@ export default function PanelTable() {
             "Content-type": "application/json"
          }
          }  
-         const {data} = await axios.post("http://localhost:9000/api/users/downlines", {
+         const {data} = await axios.post("https://betbackend.onrender.com/api/users/downlines", {
             uname
          }, config);
          if(data !== undefined && data !== null) {
@@ -60,14 +60,14 @@ export default function PanelTable() {
               {tabledata.map((downline) =>(
                 <tr key={downline._id}>
                 <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
-                <td>{downline.username}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.PBU}</td>
+                <td>{downline.status}</td>
               </tr>
               ))}
             </tbody>
